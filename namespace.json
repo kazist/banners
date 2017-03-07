@@ -1,0 +1,42 @@
+{
+    "BannersBanners": {
+        "namespace": "Banners\\Banners",
+        "controller": "BannersController"
+    },
+    "BannersBannersCampaigns": {
+        "namespace": "Banners\\Banners\\Campaigns",
+        "controller": "CampaignsController"
+    },
+    "BannersBannersOptions": {
+        "namespace": "Banners\\Banners\\Options",
+        "controller": "OptionsController"
+    },
+    "BannersBannersZones": {
+        "namespace": "Banners\\Banners\\Zones",
+        "controller": "ZonesController"
+    },
+    "BannersCampaigns": {
+        "namespace": "Banners\\Campaigns",
+        "controller": "CampaignsController"
+    },
+    "BannersOptions": {
+        "namespace": "Banners\\Options",
+        "controller": "OptionsController"
+    },
+    "BannersPackages": {
+        "namespace": "Banners\\Packages",
+        "controller": "PackagesController"
+    },
+    "BannersZones": {
+        "namespace": "Banners\\Zones",
+        "controller": "ZonesController"
+    },
+    "BannersActions": {
+        "namespace": "Banners\\Actions",
+        "controller": "ActionsController"
+    },
+    "BannersBannersPayments": {
+        "namespace": "Banners\\Banners\\Payments",
+        "controller": "PaymentsController"
+    }
+}

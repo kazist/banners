@@ -1,0 +1,6 @@
+[{
+        "name": "banners_banners_points_per_dollar",
+        "label": "Points Per Dollar",
+        "default": "",
+        "type": "text"
+    }]

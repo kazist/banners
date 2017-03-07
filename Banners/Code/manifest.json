@@ -1,0 +1,13 @@
+{
+    "name": "banners",
+    "title": "Banners Listing",
+    "explanation": "Banners Listing",
+    "description": "Banners Listing",
+    "version": 36,
+    "has_view": "1",
+    "tie_field": "0",
+    "email_on_new": "0",
+    "email_on_edit": "0",
+    "email_on_delete": "0",
+    "date_file_modified": "2016-11-12 17:30:18"
+}

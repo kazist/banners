@@ -1,0 +1,18 @@
+
+<div class="text-center">
+    
+    {% if banner.target_url != '' %}
+        <a href="{{ banner.target_url }}">
+            <img class="img-responsive" src="{{ web_root }}{{ banner.image_file }}" title="{{ banner.image_title }}" style="margin: 0 auto;">
+        </a>
+    {% else %}
+        <img class="img-responsive" src="{{ web_root }}{{ banner.image_file }}" title="{{ banner.image_title }}" style="margin: 0 auto;">
+    {% endif %}
+    
+    <div class="text-center">
+        <a href="{{ generate_url('banners.banners.add') }}">Adverise Here</a>
+    </div>
+</div>
+
+
+

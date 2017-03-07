@@ -1,0 +1,9 @@
+{
+    "name": "banners",
+    "title": "Banners",
+    "icon": "banners\/banners\/icon.png",
+    "extension": "component",
+    "path": "banners\/",
+    "description": "Banners List",
+    "version": 1
+}

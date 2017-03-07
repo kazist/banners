@@ -1,0 +1,241 @@
+{
+    "frontend": [{
+            "title": "Banner List",
+            "description": "Management of Banners.",
+            "controller": "Banners\\Banners\\Code\\Controllers\\BannersController::indexAction",
+            "permissions": "can_view, can_viewown",
+            "unique_name": "banners.banners",
+            "route": "banners/banners",
+            "arguments": "",
+            "keywords": "banner, list",
+            "priority": "0.5",
+            "changefreq": "weekly",
+            "login_required": 1,
+            "roles": {
+                "SUPER_ADMIN": ["can_view", "can_viewown"],
+                "ADMIN": ["can_view", "can_viewown"],
+                "MODERATOR": ["can_view", "can_viewown"],
+                "USER": ["can_view", "can_viewown"]
+            }
+        }, {
+            "title": "Add Banner ",
+            "description": "Add Banner .",
+            "controller": "Banners\\Banners\\Code\\Controllers\\BannersController::addAction",
+            "unique_name": "banners.banners.add",
+            "route": "banners/banners/add",
+            "permissions": "can_add",
+            "arguments": {},
+            "keywords": "banner, add",
+            "priority": "0.5",
+            "changefreq": "weekly",
+            "login_required": 1,
+            "roles": {
+                "SUPER_ADMIN": ["can_add"],
+                "ADMIN": ["can_add"],
+                "MODERATOR": ["can_add"],
+                "USER": ["can_add"]
+            }
+        }, {
+            "title": "Edit Banner {{ item.name }}",
+            "description": "Edit Banner {{ item.name }}.",
+            "controller": "Banners\\Banners\\Code\\Controllers\\BannersController::editAction",
+            "unique_name": "banners.banners.edit",
+            "route": "banners/banners/edit/{id}",
+            "permissions": "can_add, can_write, can_writeown",
+            "arguments": {
+                "id": null
+            },
+            "keywords": "banner, edit, {{ item.name }}",
+            "priority": "0.5",
+            "changefreq": "weekly",
+            "login_required": 1,
+            "roles": {
+                "SUPER_ADMIN": ["can_add", "can_write", "can_writeown"],
+                "ADMIN": ["can_add", "can_write", "can_writeown"],
+                "MODERATOR": ["can_add", "can_write", "can_writeown"],
+                "USER": ["can_add", "can_writeown"]
+            }
+        }, {
+            "title": "Banner Detail: {{ item.name }}",
+            "description": "Banner Detail: {{ item.name }}",
+            "controller": "Banners\\Banners\\Code\\Controllers\\BannersController::detailAction",
+            "unique_name": "banners.banners.detail",
+            "route": "banners/banners/detail/{id}",
+            "permissions": "can_view, can_viewown",
+            "arguments": {
+                "id": null
+            },
+            "keywords": "banner, detail, {{ item.name }}",
+            "priority": "0.5",
+            "changefreq": "weekly",
+            "login_required": 1,
+            "roles": {
+                "SUPER_ADMIN": ["can_view", "can_viewown"],
+                "ADMIN": ["can_view", "can_viewown"],
+                "MODERATOR": ["can_view", "can_viewown"],
+                "USER": ["can_view", "can_viewown"]
+            }
+        }, {
+            "title": "Banner Delete: {{ item.name }}",
+            "description": "Banner Delete: {{ item.name }}",
+            "controller": "Banners\\Banners\\Code\\Controllers\\BannersController::deleteAction",
+            "unique_name": "banners.banners.delete",
+            "route": "banners/banners/delete/{id}",
+            "permissions": "can_delete, can_deleteown",
+            "arguments": {
+                "id": null
+            },
+            "keywords": "banner, delete, {{ item.name }}",
+            "priority": "0.5",
+            "changefreq": "weekly",
+            "login_required": 1,
+            "roles": {
+                "SUPER_ADMIN": ["can_delete", "can_deleteown"],
+                "ADMIN": ["can_delete", "can_deleteown"],
+                "MODERATOR": ["can_delete", "can_deleteown"],
+                "USER": ["can_deleteown"]
+            }
+        }, {
+            "title": "Banner Save: {{ item.name }}",
+            "description": "Banner Save: {{ item.name }}",
+            "controller": "Banners\\Banners\\Code\\Controllers\\BannersController::saveAction",
+            "unique_name": "banners.banners.save",
+            "route": "banners/banners/save",
+            "permissions": "can_add, can_write, can_writeown",
+            "arguments": {
+                "id": null
+            },
+            "keywords": "banner, save, {{ item.name }}",
+            "priority": "0.5",
+            "changefreq": "weekly",
+            "login_required": 1,
+            "roles": {
+                "SUPER_ADMIN": ["can_add", "can_write", "can_writeown"],
+                "ADMIN": ["can_add", "can_write", "can_writeown"],
+                "MODERATOR": ["can_add", "can_write", "can_writeown"],
+                "USER": ["can_add", "can_writeown"]
+            }
+        }]
+    ,
+    "backend": [{
+            "title": "General Tasks",
+            "description": "General Tasks.",
+            "controller": "Banners\\Banners\\Code\\Controllers\\Admin\\BannersController::taskAction",
+            "unique_name": "admin.banners.banners.task",
+            "route": "admin/banners/banners/task",
+            "permissions": "can_write",
+            "arguments": "",
+            "keywords": "banners, task",
+            "priority": "0.5",
+            "changefreq": "weekly",
+            "login_required": 1,
+            "roles": {
+                "SUPER_ADMIN": ["can_write"],
+                "ADMIN": ["can_write"]
+            }
+        }, {
+            "title": "Banner List",
+            "description": "Management of Banners.",
+            "controller": "Banners\\Banners\\Code\\Controllers\\Admin\\BannersController::indexAction",
+            "permissions": "can_view, can_viewown",
+            "unique_name": "admin.banners.banners",
+            "route": "admin/banners/banners",
+            "arguments": "",
+            "keywords": "banner, list",
+            "priority": "0.5",
+            "changefreq": "weekly",
+            "login_required": 1,
+            "roles": {
+                "SUPER_ADMIN": ["can_view", "can_viewown"],
+                "ADMIN": ["can_view", "can_viewown"]
+            }
+        }, {
+            "title": "Add Banner ",
+            "description": "Add Banner .",
+            "controller": "Banners\\Banners\\Code\\Controllers\\Admin\\BannersController::addAction",
+            "unique_name": "admin.banners.banners.add",
+            "route": "admin/banners/banners/add",
+            "permissions": "can_add",
+            "arguments": {},
+            "keywords": "banner,add",
+            "priority": "0.5",
+            "changefreq": "weekly",
+            "login_required": 1,
+            "roles": {
+                "SUPER_ADMIN": ["can_add"],
+                "ADMIN": ["can_add"]
+            }
+        }, {
+            "title": "Edit Banner {{ item.name }}",
+            "description": "Edit Banner {{ item.name }}.",
+            "controller": "Banners\\Banners\\Code\\Controllers\\Admin\\BannersController::editAction",
+            "unique_name": "admin.banners.banners.edit",
+            "route": "admin/banners/banners/edit/{id}",
+            "permissions": "can_add, can_write, can_writeown",
+            "arguments": {
+                "id": null
+            },
+            "keywords": "banner, list, {{ item.name }}",
+            "priority": "0.5",
+            "changefreq": "weekly",
+            "login_required": 1,
+            "roles": {
+                "SUPER_ADMIN": ["can_add", "can_write", "can_writeown"],
+                "ADMIN": ["can_add", "can_write", "can_writeown"]
+            }
+        }, {
+            "title": "Banner Detail: {{ item.name }}",
+            "description": "Banner Detail: {{ item.name }}",
+            "controller": "Banners\\Banners\\Code\\Controllers\\Admin\\BannersController::detailAction",
+            "unique_name": "admin.banners.banners.detail",
+            "route": "admin/banners/banners/detail/{id}",
+            "permissions": "can_view, can_viewown",
+            "arguments": {
+                "id": null
+            },
+            "keywords": "banner, list, {{ item.name }}",
+            "priority": "0.5",
+            "changefreq": "weekly",
+            "login_required": 1,
+            "roles": {
+                "SUPER_ADMIN": ["can_view", "can_viewown"],
+                "ADMIN": ["can_view", "can_viewown"]
+            }
+        }, {
+            "title": "Banner Delete: {{ item.name }}",
+            "description": "Banner Delete: {{ item.name }}",
+            "controller": "Banners\\Banners\\Code\\Controllers\\Admin\\BannersController::deleteAction",
+            "unique_name": "admin.banners.banners.delete",
+            "route": "admin/banners/banners/delete/{id}",
+            "permissions": "can_delete, can_deleteown",
+            "arguments": {
+                "id": null
+            },
+            "keywords": "banner, delete, {{ item.name }}",
+            "priority": "0.5",
+            "changefreq": "weekly",
+            "login_required": 1,
+            "roles": {
+                "SUPER_ADMIN": ["can_delete", "can_deleteown"],
+                "ADMIN": ["can_delete", "can_deleteown"]
+            }
+        }, {
+            "title": "Banner Save: {{ item.name }}",
+            "description": "Banner Save: {{ item.name }}",
+            "controller": "Banners\\Banners\\Code\\Controllers\\Admin\\BannersController::saveAction",
+            "unique_name": "admin.banners.banners.save",
+            "route": "admin/banners/banners/save",
+            "permissions": "can_add, can_write, can_writeown",
+            "arguments": {
+                "id": null
+            },
+            "keywords": "banner, save, {{ item.name }}",
+            "priority": "0.5",
+            "changefreq": "weekly",
+            "login_required": 1,
+            "roles": {
+                "SUPER_ADMIN": ["can_add", "can_write", "can_writeown"],
+                "ADMIN": ["can_add", "can_write", "can_writeown"]
+            }
+        }]
+} 	

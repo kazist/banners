@@ -1,0 +1,14 @@
+
+{% set banner = get_context('banner') %}
+
+<div class="form-group banner_id-group">
+    <label for="banner_id" class="col-sm-3 control-label">banner_id</label>
+    <div class="col-sm-9  kazicode-form-field ">
+
+        <a href="{{ generate_url('banners.banners', null, 0, banner)}}">
+            {{ banner.title}} {{ banner.action }}
+        </a>
+
+        <input type = "hidden" name="form[banner_id]" value="{{ banner.id }}">
+    </div>
+</div>

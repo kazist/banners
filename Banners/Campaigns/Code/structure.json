@@ -1,0 +1,286 @@
+{
+    "fields": [
+        {
+            "dropdown_filter": "0",
+            "nullable": "0",
+            "name": "id",
+            "html_type": "text",
+            "mysql_type": "int",
+            "view_side": "both",
+            "index": "",
+            "id_name": "",
+            "class_name": "",
+            "default_value": "",
+            "size": "",
+            "readonly": "",
+            "format_value": "",
+            "parameters": {
+                "general": [
+                ],
+                "source": [
+                ],
+                "save": {
+                    "index": ""
+                },
+                "media": [
+                ],
+                "payment": [
+                ]
+            }
+        },
+        {
+            "dropdown_filter": "0",
+            "nullable": "0",
+            "name": "banner_id",
+            "html_type": "select",
+            "mysql_type": "int",
+            "view_side": "both",
+            "index": "",
+            "id_name": "",
+            "class_name": "",
+            "default_value": "",
+            "size": "",
+            "readonly": "0",
+            "format_value": "",
+            "parameters": {
+                "general": [
+                ],
+                "source": {
+                    "data_source": "db_table",
+                    "join_field": "id",
+                    "display_field": [
+                        "title"
+                    ],
+                    "join_table_name": "banners_banners"
+                },
+                "save": {
+                    "index": ""
+                },
+                "media": [
+                ],
+                "payment": [
+                ]
+            }
+        },
+        {
+            "dropdown_filter": "0",
+            "nullable": "0",
+            "name": "campaign_id",
+            "html_type": "select",
+            "mysql_type": "int",
+            "view_side": "both",
+            "index": "",
+            "id_name": "",
+            "class_name": "",
+            "default_value": "",
+            "size": "",
+            "readonly": "0",
+            "format_value": "",
+            "parameters": {
+                "general": [
+                ],
+                "source": {
+                    "data_source": "db_table",
+                    "join_field": "id",
+                    "display_field": [
+                        "title"
+                    ],
+                    "join_table_name": "banners_campaigns"
+                },
+                "save": {
+                    "index": ""
+                },
+                "media": [
+                ],
+                "payment": [
+                ]
+            }
+        },
+        {
+            "dropdown_filter": "0",
+            "nullable": "0",
+            "name": "created_by",
+            "html_type": "autocomplete",
+            "mysql_type": "int",
+            "view_side": "both",
+            "index": "",
+            "id_name": "",
+            "class_name": "",
+            "default_value": "",
+            "size": "",
+            "readonly": "0",
+            "format_value": "",
+            "parameters": {
+                "general": [
+                ],
+                "source": {
+                    "data_source": "db_table",
+                    "join_field": "id",
+                    "display_field": [
+                        "name"
+                    ],
+                    "join_table_name": "users_users"
+                },
+                "save": {
+                    "index": ""
+                },
+                "media": [
+                ],
+                "payment": [
+                ]
+            }
+        },
+        {
+            "dropdown_filter": "0",
+            "nullable": "0",
+            "name": "date_created",
+            "html_type": "text",
+            "mysql_type": "datetime",
+            "view_side": "both",
+            "index": "",
+            "id_name": "",
+            "class_name": "",
+            "default_value": "",
+            "size": "",
+            "readonly": "",
+            "format_value": "",
+            "parameters": {
+                "general": [
+                ],
+                "source": [
+                ],
+                "save": {
+                    "index": ""
+                },
+                "media": [
+                ],
+                "payment": [
+                ]
+            }
+        },
+        {
+            "dropdown_filter": "0",
+            "nullable": "0",
+            "name": "modified_by",
+            "html_type": "autocomplete",
+            "mysql_type": "int",
+            "view_side": "both",
+            "index": "",
+            "id_name": "",
+            "class_name": "",
+            "default_value": "",
+            "size": "",
+            "readonly": "0",
+            "format_value": "",
+            "parameters": {
+                "general": [
+                ],
+                "source": {
+                    "data_source": "db_table",
+                    "join_field": "id",
+                    "display_field": [
+                        "name"
+                    ],
+                    "join_table_name": "users_users"
+                },
+                "save": {
+                    "index": ""
+                },
+                "media": [
+                ],
+                "payment": [
+                ]
+            }
+        },
+        {
+            "dropdown_filter": "0",
+            "nullable": "0",
+            "name": "date_modified",
+            "html_type": "text",
+            "mysql_type": "datetime",
+            "view_side": "both",
+            "index": "",
+            "id_name": "",
+            "class_name": "",
+            "default_value": "",
+            "size": "",
+            "readonly": "",
+            "format_value": "",
+            "parameters": {
+                "general": [
+                ],
+                "source": [
+                ],
+                "save": {
+                    "index": ""
+                },
+                "media": [
+                ],
+                "payment": [
+                ]
+            }
+        }
+    ],
+    "primarykey": "id",
+    "table_name": "banners_banners_campaigns",
+    "table_alias": "bbc",
+    "foreignkey": "",
+    "renamedfields": "",
+    "main_fields": [
+        "id"
+    ],
+    "main_view": "table",
+    "has_view": "0",
+    "tie_field": "0",
+    "email_on_new": "0",
+    "email_on_edit": "0",
+    "email_on_delete": "0",
+    "subset_name": "campaigns",
+    "right_field": "",
+    "query": {
+        "from": {
+            "table": "Banners\\Banners\\Campaigns\\Code\\Tables\\Campaigns",
+            "alias": "bbc",
+            "name": "#__banners_banners_campaigns"
+        },
+        "select": [
+            "bbc.id",
+            "bbc.banner_id",
+            "bb.title AS banner_id_title",
+            "bbc.campaign_id",
+            "bc.title AS campaign_id_title",
+            "bbc.created_by",
+            "uu.name AS created_by_name",
+            "bbc.date_created",
+            "bbc.modified_by",
+            "uu_5074.name AS modified_by_name",
+            "bbc.date_modified"
+        ],
+        "leftjoin": [
+            {
+                "table": "Banners\\Banners\\Code\\Tables\\Banners",
+                "alias": "bb",
+                "name": "#__banners_banners",
+                "on": "bbc.banner_id = bb.id"
+            },
+            {
+                "table": "Banners\\Campaigns\\Code\\Tables\\Campaigns",
+                "alias": "bc",
+                "name": "#__banners_campaigns",
+                "on": "bbc.campaign_id = bc.id"
+            },
+            {
+                "table": "Users\\Users\\Code\\Tables\\Users",
+                "alias": "uu",
+                "name": "#__users_users",
+                "on": "bbc.created_by = uu.id"
+            },
+            {
+                "table": "Users\\Users\\Code\\Tables\\Users",
+                "alias": "uu_5074",
+                "name": "#__users_users",
+                "on": "bbc.modified_by = uu_5074.id"
+            }
+        ]
+    }
+}

@@ -1,0 +1,391 @@
+{
+    "views": {
+        "edit": {
+            "structure": {
+                "rows": [
+                    {
+                        "columns": [
+                            {
+                                "name": "",
+                                "class_name": "col-sm-6",
+                                "items": [
+                                    {
+                                        "group": {
+                                            "name": "Package Detail",
+                                            "unique_name": "package_detail",
+                                            "has_title": 1,
+                                            "user_right": null,
+                                            "hide_on_new": null,
+                                            "fields": [
+                                                "title",
+                                                "zone_id",
+                                                "option_id",
+                                                "point_charged"
+                                            ]
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "",
+                                "class_name": "col-sm-6",
+                                "items": [
+                                    {
+                                        "group": {
+                                            "name": "Modification Detail",
+                                            "unique_name": "modification_detail",
+                                            "has_title": 1,
+                                            "user_right": 1,
+                                            "hide_on_new": 1,
+                                            "fields": [
+                                                "date_modified",
+                                                "modified_by",
+                                                "date_created",
+                                                "created_by"
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "ommitted": [
+                "id"
+            ]
+        },
+        "table": {
+            "fields": [
+                "title",
+                "zone_id",
+                "option_id",
+                "point_charged"
+            ],
+            "has_label": [
+                "title",
+                "zone_id",
+                "option_id",
+                "point_charged"
+            ]
+        }
+    },
+    "rights": {
+        "tab": [],
+        "group": [
+            "modification_detail"
+        ],
+        "field": []
+    },
+    "customhtmls": [],
+    "fields": [
+        {
+            "dropdown_filter": "0",
+            "nullable": "1",
+            "name": "id",
+            "html_type": "text",
+            "mysql_type": "int",
+            "view_side": "both",
+            "index": "",
+            "id_name": "",
+            "class_name": "",
+            "default_value": "",
+            "size": "",
+            "readonly": "",
+            "format_value": "",
+            "parameters": {
+                "general": [],
+                "source": [],
+                "save": {
+                    "index": ""
+                },
+                "media": [],
+                "payment": []
+            }
+        },
+        {
+            "dropdown_filter": "1",
+            "nullable": "0",
+            "name": "title",
+            "html_type": "text",
+            "mysql_type": "varchar",
+            "view_side": "both",
+            "index": "",
+            "id_name": "",
+            "class_name": "",
+            "default_value": "",
+            "size": "",
+            "readonly": "",
+            "format_value": "",
+            "parameters": {
+                "general": [],
+                "source": [],
+                "save": {
+                    "index": ""
+                },
+                "media": [],
+                "payment": []
+            }
+        },
+        {
+            "dropdown_filter": "1",
+            "nullable": "1",
+            "name": "zone_id",
+            "html_type": "select",
+            "mysql_type": "int",
+            "view_side": "both",
+            "index": "",
+            "id_name": "",
+            "class_name": "",
+            "default_value": "",
+            "size": "",
+            "readonly": "0",
+            "format_value": "",
+            "parameters": {
+                "general": [],
+                "source": {
+                    "data_source": "db_table",
+                    "join_field": "id",
+                    "display_field": [
+                        "title"
+                    ],
+                    "join_table_name": "banners_zones"
+                },
+                "save": {
+                    "index": ""
+                },
+                "media": [],
+                "payment": []
+            }
+        },
+        {
+            "dropdown_filter": "1",
+            "nullable": "1",
+            "name": "option_id",
+            "html_type": "select",
+            "mysql_type": "int",
+            "view_side": "both",
+            "index": "",
+            "id_name": "",
+            "class_name": "",
+            "default_value": "",
+            "size": "",
+            "readonly": "0",
+            "format_value": "",
+            "parameters": {
+                "general": [],
+                "source": {
+                    "data_source": "db_table",
+                    "join_field": "id",
+                    "display_field": [
+                        "title"
+                    ],
+                    "join_table_name": "banners_options"
+                },
+                "save": {
+                    "index": ""
+                },
+                "media": [],
+                "payment": []
+            }
+        },
+        {
+            "dropdown_filter": "1",
+            "nullable": "1",
+            "name": "point_charged",
+            "html_type": "text",
+            "mysql_type": "int",
+            "view_side": "both",
+            "index": "",
+            "id_name": "",
+            "class_name": "",
+            "default_value": "",
+            "size": "",
+            "readonly": "0",
+            "format_value": "",
+            "parameters": {
+                "general": [],
+                "source": [],
+                "save": {
+                    "index": ""
+                },
+                "media": [],
+                "payment": []
+            }
+        },
+        {
+            "dropdown_filter": "0",
+            "nullable": "1",
+            "name": "created_by",
+            "html_type": "autocomplete",
+            "mysql_type": "int",
+            "view_side": "both",
+            "index": "",
+            "id_name": "",
+            "class_name": "",
+            "default_value": "",
+            "size": "",
+            "readonly": "0",
+            "format_value": "",
+            "parameters": {
+                "general": [],
+                "source": {
+                    "data_source": "db_table",
+                    "join_field": "id",
+                    "display_field": [
+                        "name"
+                    ],
+                    "join_table_name": "users_users"
+                },
+                "save": {
+                    "index": ""
+                },
+                "media": [],
+                "payment": []
+            }
+        },
+        {
+            "dropdown_filter": "0",
+            "nullable": "1",
+            "name": "date_created",
+            "html_type": "text",
+            "mysql_type": "datetime",
+            "view_side": "both",
+            "index": "",
+            "id_name": "",
+            "class_name": "",
+            "default_value": "",
+            "size": "",
+            "readonly": "",
+            "format_value": "",
+            "parameters": {
+                "general": [],
+                "source": [],
+                "save": {
+                    "index": ""
+                },
+                "media": [],
+                "payment": []
+            }
+        },
+        {
+            "dropdown_filter": "0",
+            "nullable": "1",
+            "name": "modified_by",
+            "html_type": "autocomplete",
+            "mysql_type": "int",
+            "view_side": "both",
+            "index": "",
+            "id_name": "",
+            "class_name": "",
+            "default_value": "",
+            "size": "",
+            "readonly": "0",
+            "format_value": "",
+            "parameters": {
+                "general": [],
+                "source": {
+                    "data_source": "db_table",
+                    "join_field": "id",
+                    "display_field": [
+                        "name"
+                    ],
+                    "join_table_name": "users_users"
+                },
+                "save": {
+                    "index": ""
+                },
+                "media": [],
+                "payment": []
+            }
+        },
+        {
+            "dropdown_filter": "0",
+            "nullable": "1",
+            "name": "date_modified",
+            "html_type": "text",
+            "mysql_type": "datetime",
+            "view_side": "both",
+            "index": "",
+            "id_name": "",
+            "class_name": "",
+            "default_value": "",
+            "size": "",
+            "readonly": "",
+            "format_value": "",
+            "parameters": {
+                "general": [],
+                "source": [],
+                "save": {
+                    "index": ""
+                },
+                "media": [],
+                "payment": []
+            }
+        }
+    ],
+    "primarykey": "id",
+    "table_name": "banners_packages",
+    "table_alias": "bp",
+    "foreignkey": "",
+    "renamedfields": "",
+    "main_fields": [
+        "title"
+    ],
+    "main_view": "table",
+    "has_view": "1",
+    "tie_field": "0",
+    "email_on_new": "0",
+    "email_on_edit": "0",
+    "email_on_delete": "0",
+    "subset_name": "packages",
+    "right_field": "",
+    "query": {
+        "from": {
+            "table": "Banners\\Packages\\Code\\Tables\\Packages",
+            "alias": "bp",
+            "name": "#__banners_packages"
+        },
+        "select": [
+            "bp.id",
+            "bp.title",
+            "bp.zone_id",
+            "bz.title AS zone_id_title",
+            "bp.option_id",
+            "bo.title AS option_id_title",
+            "bp.point_charged",
+            "bp.created_by",
+            "uu.name AS created_by_name",
+            "bp.date_created",
+            "bp.modified_by",
+            "uu_5710.name AS modified_by_name",
+            "bp.date_modified"
+        ],
+        "leftjoin": [
+            {
+                "table": "Banners\\Zones\\Code\\Tables\\Zones",
+                "alias": "bz",
+                "name": "#__banners_zones",
+                "on": "bp.zone_id = bz.id"
+            },
+            {
+                "table": "Banners\\Options\\Code\\Tables\\Options",
+                "alias": "bo",
+                "name": "#__banners_options",
+                "on": "bp.option_id = bo.id"
+            },
+            {
+                "table": "Users\\Users\\Code\\Tables\\Users",
+                "alias": "uu",
+                "name": "#__users_users",
+                "on": "bp.created_by = uu.id"
+            },
+            {
+                "table": "Users\\Users\\Code\\Tables\\Users",
+                "alias": "uu_5710",
+                "name": "#__users_users",
+                "on": "bp.modified_by = uu_5710.id"
+            }
+        ]
+    }
+}

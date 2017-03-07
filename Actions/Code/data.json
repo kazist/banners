@@ -1,0 +1,19 @@
+
+[{
+        "tracking_id": "1",
+        "title": "Pay Per Click",
+        "action": "ppc",
+        "point_charged": "2"
+    }, {
+        "tracking_id": "2",
+        "title": "Pay Per View",
+        "action": "ppv",
+        "point_charged": "1"
+    }, {
+        "tracking_id": "3",
+        "title": "Pay Per Day",
+        "action": "ppd",
+        "point_charged": "10"
+    }]
+
+

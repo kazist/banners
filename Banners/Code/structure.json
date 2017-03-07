@@ -1,0 +1,716 @@
+{
+    "views": {
+        "edit": {
+            "structure": {
+                "rows": [
+                    {
+                        "columns": [
+                            {
+                                "name": "",
+                                "class_name": "col-sm-6",
+                                "items": [
+                                    {
+                                        "group": {
+                                            "name": "banner Detail",
+                                            "unique_name": "banner_detail",
+                                            "has_title": 1,
+                                            "user_right": null,
+                                            "hide_on_new": null,
+                                            "fields": [
+                                                "title",
+                                                "target_url",
+                                                "package_id",
+                                                "actions",
+                                                "days",
+                                                "total_amount"
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "group": {
+                                            "name": "Advert Script & Image",
+                                            "unique_name": "advert_script_&_image",
+                                            "has_title": 1,
+                                            "user_right": 0,
+                                            "hide_on_new": 0,
+                                            "fields": [
+                                                "image",
+                                                "script"
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "group": {
+                                            "name": "Description",
+                                            "unique_name": "description",
+                                            "has_title": 1,
+                                            "user_right": 0,
+                                            "hide_on_new": 0,
+                                            "fields": [
+                                                "description"
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "group": {
+                                            "name": "Publishing Details",
+                                            "unique_name": "publishing_details",
+                                            "has_title": 1,
+                                            "user_right": 1,
+                                            "hide_on_new": 1,
+                                            "fields": [
+                                                "published",
+                                                "featured"
+                                            ]
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "",
+                                "class_name": "col-sm-6",
+                                "items": [
+                                    {
+                                        "tab": [
+                                            {
+                                                "name": "Other Details",
+                                                "unique_name": "other_details",
+                                                "user_right": 1,
+                                                "hide_on_new": 1,
+                                                "tabcontent": {
+                                                    "columns": [
+                                                        {
+                                                            "name": "",
+                                                            "class_name": "col-sm-12",
+                                                            "items": [
+                                                                {
+                                                                    "group": {
+                                                                        "name": "Other Details",
+                                                                        "unique_name": "other_details",
+                                                                        "has_title": null,
+                                                                        "user_right": null,
+                                                                        "hide_on_new": null,
+                                                                        "fields": [
+                                                                            "points"
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            },
+                                            {
+                                                "name": "Payment ",
+                                                "unique_name": "payment_",
+                                                "user_right": 1,
+                                                "hide_on_new": 1,
+                                                "tabcontent": {
+                                                    "columns": [
+                                                        {
+                                                            "name": "",
+                                                            "class_name": "col-sm-12",
+                                                            "items": []
+                                                        }
+                                                    ]
+                                                }
+                                            },
+                                            {
+                                                "name": "Modification Detail",
+                                                "unique_name": "modification_detail",
+                                                "user_right": 1,
+                                                "hide_on_new": 1,
+                                                "tabcontent": {
+                                                    "columns": [
+                                                        {
+                                                            "name": "",
+                                                            "class_name": "col-sm-12",
+                                                            "items": [
+                                                                {
+                                                                    "group": {
+                                                                        "name": "Modification Detail",
+                                                                        "unique_name": "modification_detail",
+                                                                        "has_title": null,
+                                                                        "user_right": 1,
+                                                                        "hide_on_new": 1,
+                                                                        "fields": [
+                                                                            "modified_by",
+                                                                            "date_modified",
+                                                                            "created_by",
+                                                                            "date_created"
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "ommitted": [
+                "id"
+            ]
+        },
+        "table": {
+            "fields": [
+                "title",
+                "image",
+                "days",
+                "actions",
+                "points",
+                "package_id",
+                "published",
+                "featured",
+                "created_by",
+                "date_created"
+            ],
+            "has_label": [
+                "title",
+                "image",
+                "days",
+                "actions",
+                "points",
+                "package_id",
+                "published",
+                "featured",
+                "created_by",
+                "date_created"
+            ]
+        }
+    },
+    "rights": {
+        "tab": [
+            "other_details",
+            "payment_",
+            "modification_detail"
+        ],
+        "group": [
+            "publishing_details",
+            "modification_detail"
+        ],
+        "field": []
+    },
+    "customhtmls": [
+        {
+            "name": "total_amount",
+            "title": "Total Amount",
+            "type": "module",
+            "description": "undefined"
+        }
+    ],
+    "fields": [
+        {
+            "dropdown_filter": "0",
+            "nullable": "0",
+            "name": "id",
+            "html_type": "text",
+            "mysql_type": "int",
+            "view_side": "both",
+            "index": "",
+            "id_name": "",
+            "class_name": "",
+            "default_value": "",
+            "size": "",
+            "readonly": "",
+            "format_value": "",
+            "parameters": {
+                "general": [],
+                "source": [],
+                "save": {
+                    "index": ""
+                },
+                "media": [],
+                "payment": []
+            }
+        },
+        {
+            "dropdown_filter": "1",
+            "nullable": "0",
+            "name": "title",
+            "html_type": "text",
+            "mysql_type": "varchar",
+            "view_side": "both",
+            "index": "",
+            "id_name": "",
+            "class_name": "",
+            "default_value": "",
+            "size": "",
+            "readonly": "",
+            "format_value": "",
+            "parameters": {
+                "general": [],
+                "source": [],
+                "save": {
+                    "index": ""
+                },
+                "media": [],
+                "payment": []
+            }
+        },
+        {
+            "dropdown_filter": "0",
+            "nullable": "1",
+            "name": "description",
+            "html_type": "textarea",
+            "mysql_type": "text",
+            "view_side": "both",
+            "index": "",
+            "id_name": "",
+            "class_name": "",
+            "default_value": "",
+            "size": "",
+            "readonly": "0",
+            "format_value": "",
+            "parameters": {
+                "general": {
+                    "col": "",
+                    "row": ""
+                },
+                "source": [],
+                "save": {
+                    "index": ""
+                },
+                "media": [],
+                "payment": []
+            }
+        },
+        {
+            "dropdown_filter": "1",
+            "nullable": "1",
+            "name": "image",
+            "html_type": "media",
+            "mysql_type": "int",
+            "view_side": "both",
+            "index": "",
+            "id_name": "",
+            "class_name": "",
+            "default_value": "",
+            "size": "",
+            "readonly": "0",
+            "format_value": "",
+            "parameters": {
+                "general": {
+                    "file_path": "",
+                    "file_group_by": "id"
+                },
+                "source": [],
+                "save": {
+                    "index": ""
+                },
+                "media": [],
+                "payment": []
+            }
+        },
+        {
+            "dropdown_filter": "0",
+            "nullable": "1",
+            "name": "script",
+            "html_type": "textarea",
+            "mysql_type": "text",
+            "view_side": "both",
+            "index": "",
+            "id_name": "",
+            "class_name": "",
+            "default_value": "",
+            "size": "",
+            "readonly": "0",
+            "format_value": "",
+            "parameters": {
+                "general": {
+                    "col": "",
+                    "row": ""
+                },
+                "source": [],
+                "save": {
+                    "index": ""
+                },
+                "media": [],
+                "payment": []
+            }
+        },
+        {
+            "dropdown_filter": "0",
+            "nullable": "1",
+            "name": "target_url",
+            "html_type": "text",
+            "mysql_type": "varchar",
+            "view_side": "both",
+            "index": "",
+            "id_name": "",
+            "class_name": "",
+            "default_value": "",
+            "size": "",
+            "readonly": "0",
+            "format_value": "",
+            "parameters": {
+                "general": [],
+                "source": [],
+                "save": {
+                    "index": ""
+                },
+                "media": [],
+                "payment": []
+            }
+        },
+        {
+            "dropdown_filter": "1",
+            "nullable": "1",
+            "name": "days",
+            "html_type": "text",
+            "mysql_type": "text",
+            "view_side": "both",
+            "index": "",
+            "id_name": "",
+            "class_name": "",
+            "default_value": "",
+            "size": "",
+            "readonly": "0",
+            "format_value": "",
+            "parameters": {
+                "general": [],
+                "source": [],
+                "save": {
+                    "index": ""
+                },
+                "media": [],
+                "payment": []
+            }
+        },
+        {
+            "dropdown_filter": "1",
+            "nullable": "1",
+            "name": "actions",
+            "html_type": "select",
+            "mysql_type": "varchar",
+            "view_side": "both",
+            "index": "",
+            "id_name": "",
+            "class_name": "",
+            "default_value": "",
+            "size": "",
+            "readonly": "0",
+            "format_value": "",
+            "parameters": {
+                "general": [],
+                "source": {
+                    "customs": [
+                        {
+                            "value": "ppc",
+                            "text": "Pay Per Click"
+                        },
+                        {
+                            "value": "ppv",
+                            "text": "Pay Per View"
+                        },
+                        {
+                            "value": "ppd",
+                            "text": "Pay Per Day"
+                        }
+                    ],
+                    "data_source": "custom"
+                },
+                "save": {
+                    "index": ""
+                },
+                "media": [],
+                "payment": []
+            }
+        },
+        {
+            "dropdown_filter": "1",
+            "nullable": "1",
+            "name": "points",
+            "html_type": "text",
+            "mysql_type": "int",
+            "view_side": "both",
+            "index": "",
+            "id_name": "",
+            "class_name": "",
+            "default_value": "",
+            "size": "",
+            "readonly": "0",
+            "format_value": "",
+            "parameters": {
+                "general": [],
+                "source": [],
+                "save": {
+                    "index": ""
+                },
+                "media": [],
+                "payment": []
+            }
+        },
+        {
+            "dropdown_filter": "1",
+            "nullable": "1",
+            "name": "package_id",
+            "html_type": "select",
+            "mysql_type": "int",
+            "view_side": "both",
+            "index": "",
+            "id_name": "",
+            "class_name": "",
+            "default_value": "",
+            "size": "",
+            "readonly": "0",
+            "format_value": "",
+            "parameters": {
+                "general": [],
+                "source": {
+                    "data_source": "db_table",
+                    "join_field": "id",
+                    "display_field": [
+                        "title",
+                        " zone_id",
+                        " option_id"
+                    ],
+                    "join_table_name": "banners_packages"
+                },
+                "save": {
+                    "index": ""
+                },
+                "media": [],
+                "payment": []
+            }
+        },
+        {
+            "dropdown_filter": "1",
+            "nullable": "1",
+            "name": "published",
+            "html_type": "yesno",
+            "mysql_type": "int",
+            "view_side": "both",
+            "index": "",
+            "id_name": "",
+            "class_name": "",
+            "default_value": "",
+            "size": "",
+            "readonly": "0",
+            "format_value": "",
+            "parameters": {
+                "general": [],
+                "source": [],
+                "save": {
+                    "index": ""
+                },
+                "media": [],
+                "payment": []
+            }
+        },
+        {
+            "dropdown_filter": "1",
+            "nullable": "1",
+            "name": "featured",
+            "html_type": "yesno",
+            "mysql_type": "int",
+            "view_side": "both",
+            "index": "",
+            "id_name": "",
+            "class_name": "",
+            "default_value": "",
+            "size": "",
+            "readonly": "0",
+            "format_value": "",
+            "parameters": {
+                "general": [],
+                "source": [],
+                "save": {
+                    "index": ""
+                },
+                "media": [],
+                "payment": []
+            }
+        },
+        {
+            "dropdown_filter": "1",
+            "nullable": "1",
+            "name": "created_by",
+            "html_type": "autocomplete",
+            "mysql_type": "int",
+            "view_side": "both",
+            "index": "",
+            "id_name": "",
+            "class_name": "",
+            "default_value": "",
+            "size": "",
+            "readonly": "0",
+            "format_value": "",
+            "parameters": {
+                "general": [],
+                "source": {
+                    "data_source": "db_table",
+                    "join_field": "id",
+                    "display_field": [
+                        "name"
+                    ],
+                    "join_table_name": "users_users"
+                },
+                "save": {
+                    "index": ""
+                },
+                "media": [],
+                "payment": []
+            }
+        },
+        {
+            "dropdown_filter": "1",
+            "nullable": "1",
+            "name": "date_created",
+            "html_type": "text",
+            "mysql_type": "datetime",
+            "view_side": "both",
+            "index": "",
+            "id_name": "",
+            "class_name": "",
+            "default_value": "",
+            "size": "",
+            "readonly": "",
+            "format_value": "",
+            "parameters": {
+                "general": [],
+                "source": [],
+                "save": {
+                    "index": ""
+                },
+                "media": [],
+                "payment": []
+            }
+        },
+        {
+            "dropdown_filter": "0",
+            "nullable": "1",
+            "name": "modified_by",
+            "html_type": "autocomplete",
+            "mysql_type": "int",
+            "view_side": "both",
+            "index": "",
+            "id_name": "",
+            "class_name": "",
+            "default_value": "",
+            "size": "",
+            "readonly": "0",
+            "format_value": "",
+            "parameters": {
+                "general": [],
+                "source": {
+                    "data_source": "db_table",
+                    "join_field": "id",
+                    "display_field": [
+                        "name"
+                    ],
+                    "join_table_name": "users_users"
+                },
+                "save": {
+                    "index": ""
+                },
+                "media": [],
+                "payment": []
+            }
+        },
+        {
+            "dropdown_filter": "0",
+            "nullable": "1",
+            "name": "date_modified",
+            "html_type": "text",
+            "mysql_type": "datetime",
+            "view_side": "both",
+            "index": "",
+            "id_name": "",
+            "class_name": "",
+            "default_value": "",
+            "size": "",
+            "readonly": "",
+            "format_value": "",
+            "parameters": {
+                "general": [],
+                "source": [],
+                "save": {
+                    "index": ""
+                },
+                "media": [],
+                "payment": []
+            }
+        }
+    ],
+    "primarykey": "id",
+    "table_name": "banners_banners",
+    "table_alias": "bb",
+    "foreignkey": "",
+    "renamedfields": "",
+    "main_fields": [
+        "id"
+    ],
+    "main_view": "table",
+    "has_view": "1",
+    "tie_field": "0",
+    "email_on_new": "0",
+    "email_on_edit": "0",
+    "email_on_delete": "0",
+    "subset_name": "banners",
+    "right_field": "",
+    "query": {
+        "from": {
+            "table": "Banners\\Banners\\Code\\Tables\\Banners",
+            "alias": "bb",
+            "name": "#__banners_banners"
+        },
+        "select": [
+            "bb.id",
+            "bb.title",
+            "bb.description",
+            "bb.image",
+            "mm.title AS image_title",
+            "mm.file AS image_file",
+            "bb.script",
+            "bb.target_url",
+            "bb.days",
+            "bb.actions",
+            "bb.points",
+            "bb.package_id",
+            "bp.title AS package_id_title",
+            "bp.zone_id AS package_id_zone_id",
+            "bp.option_id AS package_id_option_id",
+            "bb.published",
+            "bb.featured",
+            "bb.created_by",
+            "uu.name AS created_by_name",
+            "bb.date_created",
+            "bb.modified_by",
+            "uu_6471.name AS modified_by_name",
+            "bb.date_modified"
+        ],
+        "leftjoin": [
+            {
+                "table": "Media\\Media\\Code\\Tables\\Media",
+                "alias": "mm",
+                "name": "#__media_media",
+                "on": "bb.image = mm.id"
+            },
+            {
+                "table": "Banners\\Packages\\Code\\Tables\\Packages",
+                "alias": "bp",
+                "name": "#__banners_packages",
+                "on": "bb.package_id = bp.id"
+            },
+            {
+                "table": "Users\\Users\\Code\\Tables\\Users",
+                "alias": "uu",
+                "name": "#__users_users",
+                "on": "bb.created_by = uu.id"
+            },
+            {
+                "table": "Users\\Users\\Code\\Tables\\Users",
+                "alias": "uu_6471",
+                "name": "#__users_users",
+                "on": "bb.modified_by = uu_6471.id"
+            }
+        ]
+    }
+}

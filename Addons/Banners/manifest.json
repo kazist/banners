@@ -1,0 +1,10 @@
+{
+    "name": "banners",
+    "title": "Banners Listing",
+    "explanation": "Banners Listing",
+    "description": "Banners Listing",
+    "version": 1,
+    "icon": "assets\/banners\/addons\/banners\/icon.png",
+    "extension": "addon",
+    "path": "banners\/addons\/banners\/"
+}

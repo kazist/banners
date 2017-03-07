@@ -1,0 +1,7 @@
+[{
+        "tracking_id": "1",
+        "class": "Banners\\Banners\\Payments\\Code\\Listeners\\PaymentListener",
+        "title": "BannersPayment Event Listener",
+        "description": "Listen For Banners Payment Events"
+    }]
+

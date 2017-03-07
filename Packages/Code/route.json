@@ -1,0 +1,143 @@
+{
+    "frontend": [{
+            "title": "Package List",
+            "description": "Management of Packages.",
+            "controller": "Banners\\Packages\\Code\\Controllers\\PackagesController::indexAction",
+            "permissions": "can_view, can_viewown",
+            "unique_name": "banners.packages",
+            "route": "banners/packages",
+            "arguments": "",
+            "keywords": "package, list",
+            "priority": "0.5",
+            "changefreq": "weekly",
+            "login_required": 1,
+            "roles": {
+                "SUPER_ADMIN": ["can_view", "can_viewown"],
+                "ADMIN": ["can_view", "can_viewown"],
+                "MODERATOR": ["can_view", "can_viewown"],
+                "USER": ["can_view", "can_viewown"]
+            }
+        }]
+    ,
+    "backend": [{
+            "title": "General Tasks",
+            "description": "General Tasks.",
+            "controller": "Banners\\Packages\\Code\\Controllers\\Admin\\PackagesController::taskAction",
+            "unique_name": "admin.banners.packages.task",
+            "route": "admin/banners/packages/task",
+            "permissions": "can_write",
+            "arguments": "",
+            "keywords": "packages, task",
+            "priority": "0.5",
+            "changefreq": "weekly",
+            "login_required": 1,
+            "roles": {
+                "SUPER_ADMIN": ["can_write"],
+                "ADMIN": ["can_write"]
+            }
+        }, {
+            "title": "Package List",
+            "description": "Management of Packages.",
+            "controller": "Banners\\Packages\\Code\\Controllers\\Admin\\PackagesController::indexAction",
+            "permissions": "can_view, can_viewown",
+            "unique_name": "admin.banners.packages",
+            "route": "admin/banners/packages",
+            "arguments": "",
+            "keywords": "package, list",
+            "priority": "0.5",
+            "changefreq": "weekly",
+            "login_required": 1,
+            "roles": {
+                "SUPER_ADMIN": ["can_view", "can_viewown"],
+                "ADMIN": ["can_view", "can_viewown"]
+            }
+        }, {
+            "title": "Add Package {{ item.name }}",
+            "description": "Add Package {{ item.name }}.",
+            "controller": "Banners\\Packages\\Code\\Controllers\\Admin\\PackagesController::addAction",
+            "unique_name": "admin.banners.packages.add",
+            "route": "admin/banners/packages/add",
+            "permissions": "can_add",
+            "arguments": {},
+            "keywords": "package,add",
+            "priority": "0.5",
+            "changefreq": "weekly",
+            "login_required": 1,
+            "roles": {
+                "SUPER_ADMIN": ["can_add"],
+                "ADMIN": ["can_add"]
+            }
+        }, {
+            "title": "Edit Package {{ item.name }}",
+            "description": "Edit Package {{ item.name }}.",
+            "controller": "Banners\\Packages\\Code\\Controllers\\Admin\\PackagesController::editAction",
+            "unique_name": "admin.banners.packages.edit",
+            "route": "admin/banners/packages/edit/{id}",
+            "permissions": "can_add, can_write, can_writeown",
+            "arguments": {
+                "id": null
+            },
+            "keywords": "package, edit, {{ item.name }}",
+            "priority": "0.5",
+            "changefreq": "weekly",
+            "login_required": 1,
+            "roles": {
+                "SUPER_ADMIN": ["can_add", "can_write", "can_writeown"],
+                "ADMIN": ["can_add", "can_write", "can_writeown"]
+            }
+        }, {
+            "title": "Package Detail: {{ item.name }}",
+            "description": "Package Detail: {{ item.name }}",
+            "controller": "Banners\\Packages\\Code\\Controllers\\Admin\\PackagesController::detailAction",
+            "unique_name": "admin.banners.packages.detail",
+            "route": "admin/banners/packages/detail/{id}",
+            "permissions": "can_view, can_viewown",
+            "arguments": {
+                "id": null
+            },
+            "keywords": "package, detail, {{ item.name }}",
+            "priority": "0.5",
+            "changefreq": "weekly",
+            "login_required": 1,
+            "roles": {
+                "SUPER_ADMIN": ["can_view", "can_viewown"],
+                "ADMIN": ["can_view", "can_viewown"]
+            }
+        }, {
+            "title": "Package Delete: {{ item.name }}",
+            "description": "Package Delete: {{ item.name }}",
+            "controller": "Banners\\Packages\\Code\\Controllers\\Admin\\PackagesController::deleteAction",
+            "unique_name": "admin.banners.packages.delete",
+            "route": "admin/banners/packages/delete/{id}",
+            "permissions": "can_delete, can_deleteown",
+            "arguments": {
+                "id": null
+            },
+            "keywords": "package, delete, {{ item.name }}",
+            "priority": "0.5",
+            "changefreq": "weekly",
+            "login_required": 1,
+            "roles": {
+                "SUPER_ADMIN": ["can_delete", "can_deleteown"],
+                "ADMIN": ["can_delete", "can_deleteown"]
+            }
+        }, {
+            "title": "Package Save: {{ item.name }}",
+            "description": "Package Save: {{ item.name }}",
+            "controller": "Banners\\Packages\\Code\\Controllers\\Admin\\PackagesController::saveAction",
+            "unique_name": "admin.banners.packages.save",
+            "route": "admin/banners/packages/save",
+            "permissions": "can_add, can_write, can_writeown",
+            "arguments": {
+                "id": null
+            },
+            "keywords": "package, save, {{ item.name }}",
+            "priority": "0.5",
+            "changefreq": "weekly",
+            "login_required": 1,
+            "roles": {
+                "SUPER_ADMIN": ["can_add", "can_write", "can_writeown"],
+                "ADMIN": ["can_add", "can_write", "can_writeown"]
+            }
+        }]
+} 	

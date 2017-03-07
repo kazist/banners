@@ -1,0 +1,36 @@
+[
+    {
+        "title": "Banners List",
+        "show_title": "1",
+        "unique_name": "banners.addons.banners",
+        "icon": "fa-user",
+        "homepage": "0",
+        "allpages": "0",
+        "extensionpages": "1",
+        "viewside": "frontend",
+        "explanation": "",
+        "description": "",
+        "suffix_content": "",
+        "prefix_content": "",
+        "main_content": "",
+        "positions": ["sidebar"],
+        "setting": [{
+                "name": "zone_id",
+                "label": "Zones",
+                "type": "select",
+                "source": {
+                    "custom": [{
+                            "value": "1",
+                            "text": "Default Zones"
+                        }],
+                    "table": {
+                        "name": "#__banners_zones",
+                        "where": ["published=1"],
+                        "order": ["title ASC"],
+                        "value": "id",
+                        "text": "title"
+                    }
+                }
+            }]
+    }
+]

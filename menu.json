@@ -1,0 +1,34 @@
+{
+    "title": "Banners",
+    "description": "Banners Advertisement",
+    "alias": "banners",
+    "icon": "fa-picture-o",
+    "home_link": "banners\/banners",
+    "is_core": "1",
+    "menulist": [{
+            "title": "Banners",
+            "alias": "admin_banners_banners",
+            "url": "admin/banners/banners",
+            "children": []
+        }, {
+            "title": "Campaigns",
+            "alias": "admin_banners_campaigns",
+            "url": "admin/banners/campaigns",
+            "children": []
+        }, {
+            "title": "Options",
+            "alias": "admin_banners_options",
+            "url": "admin/banners/options",
+            "children": []
+        }, {
+            "title": "Packages",
+            "alias": "admin_banners_packages",
+            "url": "admin/banners/packages",
+            "children": []
+        }, {
+            "title": "Zones",
+            "alias": "admin_banners_zones",
+            "url": "admin/banners/zones",
+            "children": []
+        }]
+}
