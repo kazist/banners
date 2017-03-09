@@ -1,7 +1,7 @@
 {
     "name": "kazist/banners",
     "description": "Kazist Banners Manager.",
-    "keywords": ["kazist", "banner manager"],
+    "keywords": ["kazist", "banner manager", "adverts"],
     "homepage": "https://github.com/kazist/banners",
     "license": "LGPL-3.0",
     "authors": [
