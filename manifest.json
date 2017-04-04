@@ -1,9 +1,9 @@
 {
-    "name": "banners",
+    "name": "kazist/banners",
     "title": "Banners",
     "icon": "banners\/banners\/icon.png",
     "extension": "component",
-    "path": "banners\/",
+    "path": "applications/Banners/",
     "description": "Banners List",
     "version": 1
 }
