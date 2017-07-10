@@ -2,33 +2,38 @@
     "title": "Banners",
     "description": "Banners Advertisement",
     "alias": "banners",
-    "icon": "fa-picture-o",
+    "icon": "fa fa-bullhorn",
     "home_link": "banners\/banners",
     "is_core": "1",
     "menulist": [{
             "title": "Banners",
             "alias": "admin_banners_banners",
             "url": "admin/banners/banners",
+            "icon": "fa fa-picture-o",
             "children": []
         }, {
             "title": "Campaigns",
             "alias": "admin_banners_campaigns",
             "url": "admin/banners/campaigns",
+            "icon": "fa fa-bullhorn",
             "children": []
         }, {
             "title": "Options",
             "alias": "admin_banners_options",
             "url": "admin/banners/options",
+            "icon": "fa fa-navicon",
             "children": []
         }, {
             "title": "Packages",
             "alias": "admin_banners_packages",
             "url": "admin/banners/packages",
+            "icon": "fa fa-archive",
             "children": []
         }, {
             "title": "Zones",
             "alias": "admin_banners_zones",
             "url": "admin/banners/zones",
+            "icon": "fa fa-map-marker",
             "children": []
         }]
 }
