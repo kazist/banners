@@ -4,6 +4,7 @@
     "keywords": ["kazist", "banner manager", "adverts"],
     "homepage": "https://github.com/kazist/banners",
     "license": "LGPL-3.0",
+    "version": "1.0.4",
     "authors": [
         {
             "name": "Dedan Irungu",
