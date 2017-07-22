@@ -4,6 +4,7 @@
     "alias": "banners",
     "icon": "fa fa-bullhorn",
     "home_link": "banners\/banners",
+    "path": "applications/Banners",
     "is_core": "1",
     "menulist": [{
             "title": "Banners",
